@@ -53,7 +53,7 @@ template <typename T>
 void Stack<T>::pop()
 {
     if (empty())
-        throw std::underflow_error("Stack is empty");
+        throw std::underflow_error("Heap is empty");
     std::vector<T>::pop_back();
 }
 
@@ -61,7 +61,7 @@ template <typename T>
 const T& Stack<T>::top() const
 {
     if (empty())
-        throw std::underflow_error("Stack is empty");
+        throw std::underflow_error("Heap is empty");
     return std::vector<T>::back();
 }
 
